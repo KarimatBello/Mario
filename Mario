@@ -1,0 +1,36 @@
+package competitive;
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+public class Competitive {
+    public static void main(String[] args) throws FileNotFoundException {
+        System.out.println("Enter the height of pyramid");
+        Scanner sc = new Scanner(System.in);
+        int n=sc.nextInt(); // Accept user iput
+      
+        //Print right aligned pattern with blank space
+        System.out.println("Right aligned pattern with blank space");
+        for(int i=1;i<=n;i++){
+            //Print the blank space
+            for(int b=n;b>i;b--)
+                System.out.print(" ");
+            //Print # character
+            for(int j=1;j<=i;j++)
+                System.out.print("#");
+            System.out.print("\n");
+        }
+        //Print right aligned pattern with .
+        System.out.println("Right aligned pattern with .");
+        for(int i=1;i<=n;i++){
+            //Print the blank space
+            for(int b=n;b>i;b--)
+                System.out.print(".");
+            //Print # character
+            for(int j=1;j<=i;j++)
+                System.out.print("#");
+            System.out.print("\n");
+        }
+    }
+}
+
